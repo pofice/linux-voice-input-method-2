@@ -8,7 +8,8 @@
 
 ```
 pip install streamlit
-pip install pyperclip 
+pip install pyperclip
+pip install dash
 ```
 
 # 运行
@@ -17,6 +18,12 @@ pip install pyperclip
 
 ```
 streamlit run rtx_im2.py
+```
+
+为了使运行更加流畅，你也可以直接运行基于dash的版本
+
+```
+python rtx3-pro.py
 ```
 
 之后我们在手机上通过ip+端口访问网页，即可在手机上完成输入
