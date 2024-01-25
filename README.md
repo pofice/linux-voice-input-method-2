@@ -1,6 +1,6 @@
 # 既然Linux的输入法不好用，那我为什么不直接用手机的输入法呢？
 
-![Demo webpage](screenshots/ui.jpg)
+![Demo webpage](screenshots/2.jpg)
 
 # 安装
 
