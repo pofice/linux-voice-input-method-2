@@ -1,3 +1,7 @@
 body {
     background-color: black;
 }
+
+#clear-button:active {
+    background-color: rgb(66, 66, 66) !important;
+}
