@@ -1,6 +1,6 @@
 import dash
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc
+from dash import html
 from dash.dependencies import Input, Output, State
 import pyperclip
 
@@ -8,8 +8,8 @@ app = dash.Dash(__name__)
 
 app.layout = html.Div([
     html.H1("RTX语音输入法", style={'color': 'gray'}),
-    dcc.Input(id="input-box", type="text", placeholder="请在此输入", style={'width': '300px', 'height': '50px', 'color': 'black', 'border-color': 'gray'}), 
-    html.Button('清除输入记录', id='clear-button', n_clicks=0, style={'width': '200px', 'height': '50px', 'color': 'black', 'background-color': 'gray'}),
+    dcc.Input(id="input-box", type="text", placeholder="请在此输入", style={'width': '300px', 'height': '50px', 'color': 'black', 'border-color': 'gray', 'border-width': '2px', 'border-style': 'solid', 'border-radius': '5px', 'text-align': 'center', 'font-size': '20px', 'margin-bottom': '10px'}), 
+    html.Button('清除输入记录', id='clear-button', n_clicks=0, style={'width': '200px', 'height': '50px', 'color': 'black', 'background-color': 'gray', 'border-color': 'gray', 'border-width': '2px', 'border-style': 'solid', 'border-radius': '50px', 'text-align': 'center', 'font-size': '20px', 'margin-bottom': '10px'}),
     html.Div(id='copy-success', children='', style={'color': 'gray'})
 ], style={'display': 'flex', 'flex-direction': 'column', 'align-items': 'center', 'justify-content': 'center', 'background-color': 'black'}) 
 
