@@ -7,11 +7,11 @@ import pyperclip
 app = dash.Dash(__name__)
 
 app.layout = html.Div([
-    html.H1("RTX语音输入法", style={'color': 'gray'}),
-    dcc.Input(id="input-box", type="text", placeholder="请在此输入", style={'width': '300px', 'height': '50px', 'color': 'black', 'border-color': 'gray', 'border-width': '2px', 'border-style': 'solid', 'border-radius': '5px', 'text-align': 'center', 'font-size': '20px', 'margin-bottom': '10px'}), 
-    html.Button('清除输入记录', id='clear-button', n_clicks=0, style={'width': '200px', 'height': '50px', 'color': 'black', 'background-color': 'gray', 'border-color': 'gray', 'border-width': '2px', 'border-style': 'solid', 'border-radius': '50px', 'text-align': 'center', 'font-size': '20px', 'margin-bottom': '10px'}),
-    html.Div(id='copy-success', children='', style={'color': 'gray'})
-], style={'display': 'flex', 'flex-direction': 'column', 'align-items': 'center', 'justify-content': 'center', 'background-color': 'black'}) 
+    html.H1("RTX语音输入法", className='h1-style'),
+    dcc.Input(id="input-box", type="text", placeholder="请在此输入", className='input-box-style'), 
+    html.Button('清除输入记录', id='clear-button', n_clicks=0, className='button-style'),
+    html.Div(id='copy-success', children='', className='div-style')
+], className='app-layout-style') 
 
 @app.callback(
     Output('input-box', 'value'),
